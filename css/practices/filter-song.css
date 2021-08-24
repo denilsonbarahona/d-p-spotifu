@@ -1,0 +1,30 @@
+.songList { 
+    align-self: flex-start;
+    inline-size: 100%;   
+    margin-block-end: 1rem;
+}
+
+.songList input {
+    max-inline-size: 32rem;
+    width: 100%;
+    border: none;
+    padding-block-end: .5rem;
+    padding-block-start: .5rem;
+    padding-inline-end: .5rem;
+    padding-inline-start: 1.875rem;
+    font: var(--button);
+    color: var(--gray10);
+    background: transparent;
+}
+
+.songList-filter {
+    position: relative;
+}
+
+.songList-filter i {
+    font-size: .875rem;
+    position: absolute;
+    top: calc(50% - .437rem);
+    left: .5rem;
+    color: var(--gray10);
+}

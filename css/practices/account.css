@@ -1,0 +1,57 @@
+ .account {
+     max-inline-size: 11.25rem;
+     cursor: pointer; 
+     position: relative;
+ }
+
+ .account-profile {
+    display: flex;
+    padding-inline-start: .125rem;
+    padding-block-start: .125rem; 
+    padding-block-end: .125rem; 
+    padding-inline-end: .625rem;
+    border-radius: 1rem; 
+    gap: .3rem;
+    align-items: center;
+    background: rgba(0, 0,0, .5);
+    color: var(--white);
+    font: var(--baseFont);  
+ }
+
+ .account-profile .account-image{
+    border-radius: 50%;
+ }
+
+ .account-profile i {
+     transform: rotate(-90deg);
+     font-size: 0.62rem;
+ }
+
+
+ .account-wrapper {
+     position: absolute;   
+     inline-size: 100%;
+ }
+
+ .account-options { 
+     padding: 0;
+     background: var(--gray50);
+     color: var(--white);
+     border-radius: .25rem;
+     padding: 0.25rem;  
+     inline-size: 100%;
+     box-sizing: border-box;
+ }
+
+ .account-options-item {  
+     padding-inline-end: .5rem;
+     padding-inline-start: .5rem;
+     padding-block-start: .125rem;
+     padding-block-end: .125rem;
+     border-radius: .125rem;
+     z-index: 1;
+ }
+
+ .account-options-item:hover{
+     background: var(--gray20);
+ }

@@ -1,0 +1,58 @@
+@import 'button-action-table.css';
+
+.songTable {
+    inline-size: 100%;
+}
+
+.songTable-table {
+    inline-size: 100%;
+}
+
+table, th, td {
+    border: none
+}
+
+.songTable-header {
+    font: var(--baseFont);
+}
+
+.songTable-header th {
+    padding-block-end: 1rem;
+    padding-block-start: 1rem;
+}
+
+.songTable-NotContent {
+    inline-size: 0%;
+    padding: 0;
+    margin: 0;
+}
+
+.songTable-actions {
+    display: flex; 
+}
+
+.songTable-actions-tableActions {
+    display: flex;
+    padding: .625rem;
+    gap:.625rem;
+}
+
+.songTable-Content {
+    color: var(--white);
+    font: var(--baseFont);
+    padding-inline-end: .625rem;
+    padding-inline-start: .625rem;
+}
+
+.songTable-header th {
+    text-align: start;
+    padding: .625rem;
+}
+
+.songTable-Content span{
+    display: flex;
+}
+
+.songTable-header-icon {
+    font-size: 1.125rem;
+}

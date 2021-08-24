@@ -1,0 +1,23 @@
+.playerPlayback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem;
+}
+
+.playerPlayback .playerPlayback-slider {
+    flex: 1;
+    /*
+        esta propieda es la parte resumida de poner
+        flex-grow: que siver para decir cuanto va a crecer un objeto
+        flex-shrink: que sirve para decir cuanto se va a encoger un objeto
+        flex-basis: 0% que nos sirbe para quitar el valor por defecto de esta propiedad
+    */    
+}
+
+.playerPlayback-progressTime {
+    font: var(--smallFont); 
+    position: relative;
+    top: 1px;
+}
+

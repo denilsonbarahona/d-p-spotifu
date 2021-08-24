@@ -1,0 +1,53 @@
+@import './body.css';
+@import './icon.css';
+@import './font.css';
+@import './link.css';
+@import './button-icon.css';
+@import './button.css';
+@import './slider.css';
+@import './player.css';
+@import './player-bar.css';
+@import './ellipsis.css';
+@import './sidebar.css';
+@import './search.css';
+@import './navigation-action.css';
+@import './account.css';
+@import './header.css';
+@import './main.css';
+@import './block-layout.css';
+@import './layout.css';
+@import './scroll.css';
+
+:root{
+    /*fonts*/
+    font-size: 14px;
+    --avadirFontFace: Avenir, Helvetica, sans-serif;
+    --headline: bold 2rem var(--avadirFontFace);
+    --title: bold 1.5rem var(--avadirFontFace);
+    --baseFont: normal .875rem var(--avadirFontFace);
+    --baseFontBold: bold .875rem var(--avadirFontFace);
+    --smallFont: normal .75rem var(--avadirFontFace);
+    --button:normal .875rem var(--avadirFontFace);
+    /*colors*/
+    --primary:#00B050;
+    --white:#ffffff;
+    --gray10: #B3B3B3;
+    --gray20: #737373;
+    --gray30: #282828;
+    --gray40: #181818;
+    --gray50: #121212;
+    --gray60: #000000;
+}
+
+
+@media screen and (min-width: 768px) {
+    :root{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1367px) {
+    :root{
+        font-size: 18px;
+    }
+}

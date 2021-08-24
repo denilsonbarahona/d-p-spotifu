@@ -1,0 +1,32 @@
+ 
+
+.topHeader {
+    display: flex; 
+    gap:1.5rem;  
+    padding-block-start: .5rem;
+    padding-block-end: .5rem; 
+    position: absolute; 
+    backdrop-filter: blur(.5rem);  
+    inline-size: calc(100% - 1.5rem);  
+}
+
+.topHeader-action {
+    margin-inline-start: 1.5rem;
+}
+
+.topHeader-form {
+    display: flex; 
+    flex: 1;  
+    gap: 1.5rem;
+    justify-content: space-between; 
+}
+
+.topHeader-form .search {
+    flex: 1;
+}
+
+@supports not (backdrop-filter: blur(.2rem)){
+    .topHeader{
+        background: var(--gray40);
+    }
+}

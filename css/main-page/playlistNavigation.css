@@ -1,0 +1,31 @@
+.playlistNavigation { 
+    flex-shrink: 0;
+}
+
+
+.playlistNavigation button {
+    block-size: 1.875rem;
+    inline-size: 1.875rem;
+    border-radius: 50%;
+    background: var(--gray40);
+    color: var(--gray10);
+    border: none;
+    cursor: pointer;
+}
+
+.playlistNavigation .back i {
+    position: relative;
+    left: -1px;
+    top: 1px;
+}
+
+.playlistNavigation .foward i {
+    position: relative;
+    left: 1px;
+    top: 1px;
+}
+
+.playlistNavigation button:disabled {
+    cursor: not-allowed;
+    opacity: .3;
+}

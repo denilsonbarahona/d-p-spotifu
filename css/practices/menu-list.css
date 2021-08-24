@@ -1,0 +1,21 @@
+ 
+.menuList {
+    padding-inline-start: 1.5rem;
+    padding-inline-end: 1.5rem;
+}
+
+.menuList .navigation-title{
+    font: var(--baseFont);
+}
+
+.menuList ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: var(--gray10);
+    display: flex;
+    flex-direction: column;
+    gap:.5rem;
+}
+
+ 

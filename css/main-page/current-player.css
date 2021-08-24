@@ -1,0 +1,42 @@
+.currentPlay { 
+    display: flex;
+    align-items: center;
+    gap:.5rem;
+}
+
+.currentPlay-cover > img{
+    inline-size: 3.5rem;
+    block-size: 3.5rem;
+    vertical-align: middle;
+}
+ 
+.currentPlay-description > a {
+    cursor: pointer;   
+    display: block;  
+    text-decoration: none; 
+}
+
+.currentPlay-actions > .player-control {    
+    font-size: 1rem;
+}
+
+.currentPlay-details {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.currentPlay-details .currentPlay-title {
+    font:var(--baseFondBold);
+    color: var(--white)
+}
+
+.currentPlay-details .currentPlay-artist {
+    font:var(--smallFont);
+    color: var(--gray10)
+}
+
+.isliked {
+    color: var(--primary);
+}
+ 

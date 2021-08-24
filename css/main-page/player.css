@@ -1,0 +1,41 @@
+@import './slider.css';
+@import './player-control.css';
+@import './playerPlayback.css';
+@import './volumeControl.css';
+@import './current-player.css';
+
+.player {     
+    display: flex;  
+    padding: 1rem;
+    gap: 1rem;
+    box-shadow: inset 0px 1px var(--gray30);
+}
+
+.player >*{  
+    flex: 1;
+    align-items: center;  
+}
+
+.player-playerControls { 
+    display: flex; 
+}
+
+.player-playerControls >* {
+    flex: 1;
+}
+
+.player-playerVolume {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.player-control{
+    border: none;
+    padding: 0;
+    display: flex;
+    background: transparent;
+    color: var(--gray10); 
+    font-size: 1rem;
+    padding: .5rem; 
+    cursor: pointer; 
+}

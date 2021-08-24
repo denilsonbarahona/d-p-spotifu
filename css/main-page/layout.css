@@ -1,0 +1,30 @@
+:root{
+    --sideBarInlineSize: 15rem;
+    --minBlockSize:37.5rem;
+    --minInlineSize:48rem;
+    --bottomSize:5.5rem;
+}
+
+
+.layout-block {
+    display: flex;
+    min-inline-size:  var(--minInlineSize);    
+}
+
+.layout-sidebar {
+    block-size: calc(100vh - var(--bottomSize)); /*el tamaño de alto del sidebar va a ser el alto del view port menos el alto que ocupa el footer*/
+    inline-size: var(--sideBarInlineSize);
+    overflow: auto;
+    min-block-size: var(--minBlockSize);
+    flex-shrink: 0;    
+}
+
+.layout-main {
+    block-size: calc(100vh - var(--bottomSize)); /*el tamaño de alto del main section va a ser el alto del view port menos el alto que ocupa el footer*/
+    overflow: auto;
+    min-block-size: var(--minBlockSize); 
+}
+
+.layout-bottom {
+    flex: 1;
+}

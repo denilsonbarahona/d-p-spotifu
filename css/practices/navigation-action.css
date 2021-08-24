@@ -1,0 +1,27 @@
+.navigationAction {
+    border: none;
+    padding: 0;
+    line-height: 0;
+    margin: 0;
+    font-size:1.125rem;
+    block-size: 1.875rem;
+    inline-size: 1.875rem;
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--gray10);
+    background: var(--gray60);
+}
+
+.navigationAction:active{
+    transform: scale(.95);
+}
+
+.arrow-left i {
+    position: relative;
+    left: -1px;
+}
+
+.arrow-right i {
+    position: relative;
+    left: 1px;
+}

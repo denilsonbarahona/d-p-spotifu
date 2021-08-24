@@ -1,0 +1,18 @@
+.playerBar { 
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    border-block-start: 1px solid var(--gray20);
+    box-shadow: inset 0px 1px var(--gray30);
+    flex-shrink: 0;
+}
+
+.playerBar >*{
+    flex:1;  
+}
+
+.playerBar-playerVolume {
+    display: flex;
+    justify-content: flex-end;
+}

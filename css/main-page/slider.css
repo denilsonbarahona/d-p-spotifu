@@ -1,0 +1,47 @@
+.slider{ 
+    block-size: 0.25rem;
+    border-radius: 0.25rem;
+    background:rgba(255, 255, 255, .2);
+    cursor: pointer;
+}
+
+.slider:hover .slider-progress {
+    background: var(--primary);
+}
+
+.slider:hover .slider-button { 
+    display: block;
+}
+
+.slider-progress{
+    background:  var(--white);
+    inline-size: 20%;
+    block-size: inherit;
+    border-radius: inherit; /* hereda el valor del padre para este atributo */
+    position: relative;
+}
+
+.slider-button{
+    display: none;
+    border: 0;
+    padding: 0;
+    position: absolute;
+    background: var(--white);
+    border-radius: 50%;
+    cursor: pointer;
+    block-size: 200%;/*este como como referencia el alto de su padre
+        si el alto del padre cambia cambia el alto de este boton */
+    aspect-ratio: 1/1;/*
+        este atributo crea un objeto cuadrado en referencia a la altura del mismo objeto
+        esto permite mantener dinamicamente el especto del objeto
+        cuando cambia el alto del padre  */
+    left: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* este atributo functiona de la siguiente forma:
+         
+         el translate recibe dos parametros 
+         (la traslación del mismo objeto en el eje x y en el eje y)
+         el movimiento en los ejes van a corresponder a las mismas dimensiones 
+         del objeto */
+}

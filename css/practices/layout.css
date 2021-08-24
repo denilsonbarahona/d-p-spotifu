@@ -1,0 +1,48 @@
+:root{
+    --sideBarInlineSize: 15rem;
+    --minBlockSize:37.5rem;
+    --minInlineSize:48rem;
+    --bottomSize:5.5rem;
+}
+
+.sticky {
+    position: relative;
+    top: 0;  
+}
+
+.layout-content-sidebar {
+    block-size: calc(100vh - var(--bottomSize));
+    inline-size: var(--sideBarInlineSize); 
+    min-block-size: var(--minBlockSize);
+    flex-shrink: 0;
+    overflow-y: auto;
+}
+
+.layout-content { 
+    
+    block-size: calc(100vh - var(--bottomSize));
+    display: flex; 
+    margin: 0;
+    flex-shrink: 0;
+    min-inline-size:  var(--minInlineSize);
+    min-block-size: var(--minBlockSize);    
+}
+
+.layoutBlock {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    inline-size: 70rem;  
+}
+
+ 
+
+.layoutBlock-main {
+    overflow-y: auto;
+}
+
+.footer-layout{  
+    flex-shrink: 0;
+    z-index: 8;
+    min-inline-size:  var(--minInlineSize);    
+}

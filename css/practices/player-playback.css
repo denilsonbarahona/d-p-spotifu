@@ -1,0 +1,14 @@
+.player-playback {
+    inline-size: 100%;
+}
+
+.player-playback .player-slider {
+    display: flex; 
+    gap: 0.5rem;
+    align-items: center;
+}
+
+
+.playerPlayback-time {
+    font: var(--smallFont);
+}

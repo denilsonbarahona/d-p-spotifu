@@ -1,0 +1,32 @@
+ 
+.menuItem a {
+    display: flex;  
+    padding-inline-start: 1.5rem;
+    padding-inline-end: 1.5rem;
+    block-size: 2.5rem;
+    font:var(--btto);
+    align-items: center;
+    gap: .5rem; 
+}
+
+.menuItem a:hover{
+    text-decoration: none;
+}
+
+.menuItem [class^="icon-"] { 
+    font-size: 1.5rem;
+}
+
+.menuItem.is-active a {
+    box-shadow: inset 0.25rem 0 0 var(--primary);
+    color: var(--white);
+}
+
+.menuItem.is-active a .icon-home::before {
+    content: "\e90a";
+}
+
+.menuItem.is-active a .icon-search::before {
+    content: "\e914";
+}
+

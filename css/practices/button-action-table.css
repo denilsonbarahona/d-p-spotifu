@@ -1,0 +1,31 @@
+
+.buttonActionTable {
+    border: none;
+    color: var(--white);
+    background: none; 
+    box-sizing: border-box;
+    padding: 0; 
+    line-height: 0; 
+    cursor: pointer;
+}
+
+.isPlayer { 
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    block-size: 1.5rem;
+    inline-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+    font-size: .5rem;
+    position: relative;
+}
+
+.isPlayer .buttonActionTable{
+    position: absolute;
+    left: 7px; 
+    top: calc(50% - .4rem);
+}
+
+ .iconActionSize {
+     font-size: 1.125rem;
+ }

@@ -1,0 +1,21 @@
+.searchHeader{
+    display: flex;
+    gap:1rem;
+    padding-inline-start: 1.5rem;
+    padding-inline-end: 1.5rem;
+    padding-block-end: 1rem;
+    padding-block-start: 1rem;    
+    backdrop-filter: blur(.2rem); 
+    
+
+}
+
+.searchHeader .search{
+    flex: 1;
+}
+
+@supports not (backdrop-filter: blur(.2rem)){
+    .searchHeader{
+        background: var(--gray40);
+    }
+}

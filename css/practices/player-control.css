@@ -1,0 +1,17 @@
+.playerVolume {
+    display: flex;
+    align-items: center;
+    gap:0.5rem;
+    inline-size: 8rem; 
+}
+
+.player-control{
+    border: none;
+    padding: 0;
+    font-size: 1rem;
+    margin: 0;
+    line-height: 0;
+    color: var(--gray10);
+    background: none; 
+}
+

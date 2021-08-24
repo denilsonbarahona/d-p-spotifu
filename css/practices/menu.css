@@ -1,0 +1,39 @@
+.menu-item a {
+    font: var(--button); 
+    display: flex;
+    gap:.5rem;
+    align-items: center;
+    padding-block-end: .5rem;
+    padding-block-start: .5rem;
+    padding-inline-start: 1.5rem;
+}
+
+.menu-item i {
+    font-size: 1.5rem;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul a:hover {
+    text-decoration: none;
+}
+
+.menu-item.is-active{
+    box-shadow: inset .25rem 0 var(--primary);
+}
+
+.menu-item.is-active a{
+    color: var(--white);
+}
+
+.menu-item.is-active [class ^="icon-home"]::before{
+    content: "\e90a";
+}
+
+.menu-item.is-active [class ^="icon-search"]::before{
+    content: "\e914";
+}

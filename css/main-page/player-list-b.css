@@ -1,0 +1,47 @@
+.playerListB {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    inline-size: 17.5rem; 
+    display: flex;
+    background: rgba(255,255,255,.1);    
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+
+
+.playerListB .playerListB-cover img {
+    vertical-align: middle;
+    inline-size: 4.75rem;
+    block-size: 4.75rem;
+}
+
+.playerListB .playerListB-details {
+    display: flex; 
+    padding: 1rem;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.playerListB-details .playerListB-title h3 {
+    font: var(--baseFondBold);
+    color: var(--white);
+    margin: 0;
+    padding: 0; 
+}
+
+.playerListB-details .playerListB-Actions{
+    opacity: 0;
+    transition: .3s opacity;
+}
+
+.playerListB:hover .playerListB-details .playerListB-Actions,
+.playerListB:focus-within .playerListB-details .playerListB-Actions
+{
+    opacity: 1; 
+}
+
+.playerListB:hover,
+.playerListB:focus-within {
+    background: rgba(255, 255, 255, .2);
+}

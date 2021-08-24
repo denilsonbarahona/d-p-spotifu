@@ -1,0 +1,69 @@
+.playerListA {
+    background: var(--gray40);
+    inline-size: 13em; 
+    border-radius: .25rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.playerList-cover {
+    position: relative;
+    border-radius: 0.75rem;
+    margin-block-end: 1rem;
+    overflow: hidden;
+}
+
+.playerList-cover img {
+    vertical-align: middle;
+    block-size: 9.375rem;
+    inline-size: 9.375rem;
+}
+
+.playerList-cover button{
+    position: absolute;
+    right: .5rem;
+    bottom: .5rem;
+    opacity: 0;
+    transform: translateY(0.5rem);
+    transition: .3s opacity, .3s transform;
+}
+
+.playerList-title {
+    color: var(--white);
+    font: var(--baseFondBold);
+    margin: 0;
+    line-height: 1.375rem;
+    font-size: .875rem;
+    text-decoration: none;
+}
+
+.playerList-description {
+    font:var(--baseFond);
+    color: var(--gray10);
+    margin: 0;
+    line-height: 1.375rem;
+    font-size: .875rem;
+}
+
+.playerListA:hover .playerList-cover button{
+    opacity: 1;
+    transform: translateY(0);
+}
+ 
+
+.playerListA:hover {
+    background: var(--gray30);
+    cursor: pointer;
+}
+ 
+
+.playerListA:focus-within {
+    background: var(--gray30);
+}
+ 
+
+.playerListA:focus-within .playerList-cover button{
+    opacity: 1;
+    transform: translateY(0);
+}
+ 

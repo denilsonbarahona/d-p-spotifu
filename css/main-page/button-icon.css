@@ -1,0 +1,36 @@
+.buttonIcon {
+    block-size: 2.5rem;
+    inline-size: 2.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    box-sizing: border-box;
+    color: var(--gray20);
+    cursor: pointer;
+}
+
+.buttonIcon.is-white {
+    background: var(--white);
+    color: var(--gray50);
+}
+
+.buttonIcon.is-primary {
+    background: var(--primary);
+    color:var(--white)
+}
+
+.buttonIcon .icon-play {
+   position: relative;
+   /* inset-inline-end: 1px;
+   inset-inline-start: 1px; */
+   left: 1px;
+   top: 1px;
+}
+
+.buttonIcon:active {
+    transform: scale(.9);
+}
+
+.buttonIcon:hover:is([class *= "is-"]) {
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, .30);
+}
